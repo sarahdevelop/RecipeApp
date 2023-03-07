@@ -16,9 +16,7 @@ struct RecipeView: View {
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                  
-                    
-                        
+        
             } placeholder: {
                 Image(systemName: "photo")
                     .resizable()
@@ -30,13 +28,40 @@ struct RecipeView: View {
             }
             .frame(height: 300)
             .background(.white)
+         
+            VStack(spacing: 30) {
+                Text(recipe.name)
+                    .font(.largeTitle)
+                    .bold()
+                    .multilineTextAlignment(.center)
+                
+                VStack(alignment: .leading, spacing: 30) {
+                    Text(recipe.description)
+                    
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Ingredients")
+                            .font(.headline)
+                        Text(recipe.ingredients)
+                    }
+                    
+                    VStack(alignment: .leading, spacing: 20) {
+                        Text("Directions")
+                            .font(.headline)
+                        Text(recipe.directions)
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .padding(.horizontal)
+
         }
         .ignoresSafeArea(.container, edges: .top)
     }
+    
 }
 
 struct RecipeView_Previews: PreviewProvider {
     static var previews: some View {
-        RecipeView(recipe: Recipe.all[0])
+        RecipeView(recipe: Recipe.all[2])
     }
 }
