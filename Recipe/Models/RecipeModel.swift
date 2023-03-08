@@ -7,7 +7,8 @@
 
 import Foundation
 
-enum Category: String {
+enum Category: String, CaseIterable, Identifiable {
+    var id: String { self.rawValue }
     case breakfast = "Breakfast"
     case lunch = "Lunch"
     case dinner = "Dinner"
@@ -34,7 +35,7 @@ extension Recipe {
     static let all: [Recipe] = [
     
         Recipe( name: "Sauerkraut",
-                image: "https://elavegan.com/de/wp-content/uploads/sites/5/2020/01/Sauerkraut-selber-machen-im-Einmachglas.jpg",
+                image: "https://images.utopia.de/x5PUndIFkdRoxss49NBZ1BDNpY6Us7uNQHLllUVTQwY/rt:fill/w:640/h:300/g:ce/plain/2019/01/sauerkraut-colourboxde-190103-1.jpg",
                 description: "Sauerkraut selbstgemacht. Dazu braucht man nur Weißkohl und Salz!",
                 ingredients: "\n- Weißkohl \n-Sauerkraut",
                 directions: "Sauerkraut in dünne Streifen schneiden. Anschließend mit salz vermengen und 10min gut knäten. In ein Gefäß geben und gut zusammen drücken. Deckel drauf und 5 Tage lang in einen dunklen Ort bei raum temperatur. Danach noch 14 Tage lang im Kühlschrank lagern. Fertig!",

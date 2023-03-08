@@ -21,6 +21,7 @@
 		D1E6B02529B6584B00D6F6BF /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6B02429B6584B00D6F6BF /* RecipeCard.swift */; };
 		D1E6B02729B6938100D6F6BF /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6B02629B6938100D6F6BF /* RecipeList.swift */; };
 		D1E6B02929B6999F00D6F6BF /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E6B02829B6999F00D6F6BF /* RecipeView.swift */; };
+		D1F0517929B9393400116405 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F0517829B9393400116405 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		D1E6B02429B6584B00D6F6BF /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
 		D1E6B02629B6938100D6F6BF /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
 		D1E6B02829B6999F00D6F6BF /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
+		D1F0517829B9393400116405 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E6B02829B6999F00D6F6BF /* RecipeView.swift */,
+				D1F0517829B9393400116405 /* CategoryView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				D1E6B01929B6382400D6F6BF /* CategoriesView.swift in Sources */,
 				D1E6B01B29B6383B00D6F6BF /* NewRecipeView.swift in Sources */,
 				D1E6B02129B63A6500D6F6BF /* TabBar.swift in Sources */,
+				D1F0517929B9393400116405 /* CategoryView.swift in Sources */,
 				D1E6B01D29B6384F00D6F6BF /* FavoritesView.swift in Sources */,
 				D1E6B02929B6999F00D6F6BF /* RecipeView.swift in Sources */,
 				D1E6B02729B6938100D6F6BF /* RecipeList.swift in Sources */,
